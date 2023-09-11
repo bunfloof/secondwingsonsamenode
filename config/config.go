@@ -25,7 +25,7 @@ import (
 	"github.com/pterodactyl/wings/system"
 )
 
-const DefaultLocation = "/etc/pterodactyl/config.yml"
+const DefaultLocation = "/etc/pterodactyl2/config.yml"
 
 // DefaultTLSConfig sets sane defaults to use when configuring the internal
 // webserver to listen for public connections.
@@ -63,7 +63,7 @@ type SftpConfiguration struct {
 	// The bind address of the SFTP server.
 	Address string `default:"0.0.0.0" json:"bind_address" yaml:"bind_address"`
 	// The bind port of the SFTP server.
-	Port int `default:"2022" json:"bind_port" yaml:"bind_port"`
+	Port int `default:"2023" json:"bind_port" yaml:"bind_port"`
 	// If set to true, no write actions will be allowed on the SFTP server.
 	ReadOnly bool `default:"false" yaml:"read_only"`
 }
@@ -75,7 +75,7 @@ type ApiConfiguration struct {
 	Host string `default:"0.0.0.0" yaml:"host"`
 
 	// The port that the internal webserver should bind to.
-	Port int `default:"8080" yaml:"port"`
+	Port int `default:"8081" yaml:"port"`
 
 	// SSL configuration for the daemon.
 	Ssl struct {
@@ -140,7 +140,7 @@ type SystemConfiguration struct {
 	TmpDirectory string `default:"/tmp/pterodactyl2" yaml:"tmp_directory"`
 
 	// The user that should own all of the server files, and be used for containers.
-	Username string `default:"pterodactyl" yaml:"username"`
+	Username string `default:"pterodactyl2" yaml:"username"`
 
 	// The timezone for this Wings instance. This is detected by Wings automatically if possible,
 	// and falls back to UTC if not able to be detected. If you need to set this manually, that
