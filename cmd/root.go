@@ -422,11 +422,13 @@ func initLogging() {
 func printLogo() {
 	fmt.Printf(colorstring.Color(`
                      ____
-__ [blue][bold]Pterodactyl[reset] _____/___/_______ _______ ______
-\_____\    \/\/    /   /       /  __   /   ___/
-   \___\          /   /   /   /  /_/  /___   /
-        \___/\___/___/___/___/___    /______/
+__ [blue][bold]Pterodactyl[reset] _____/___/_______ _______ __________________
+\_____\    \/\/    /   /       /  __   /   ___/  _____/  /  /  /   \/   \
+   \___\          /   /   /   /  /_/  /___   /	/____/  /__/  /          \
+        \___/\___/___/___/___/___    /______/_______/________/____/\/\____\
                             /_______/ [bold]%s[reset]
+
+This is a MODIFIED version of Wings by Bun designed to run 2 wings on the same node!
 
 Copyright © 2018 - %d Dane Everitt & Contributors
 
